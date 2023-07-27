@@ -119,10 +119,8 @@ else:
 
     elif class_names[np.argmax(predictions)] == 'Sooty Mould':
         st.sidebar.warning(string)
-        st.write("Remedy")
+        st.markdown("## Remedy")
         st.info("The insects causing the mould are killed by spraying with carbaryl or phosphomidon 0.03%. It is followed by spraying with a dilute solution of starch or maida 5%. On drying, the starch comes off in flakes and the process removes the black mouldy growth fungi from different plant parts.")
 
 
 
-if class_names[np.argmax(predictions)] != 'Healthy':
-    st.sidebar.write("For knowing the remedies, kindly scroll to the bottom of the page")
