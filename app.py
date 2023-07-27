@@ -30,7 +30,7 @@ def prediction_cls(prediction):
 
 with st.sidebar:
         st.image('mg.png')
-        st.title("Mangifera Heatlhika")
+        st.title("Mangifera Healthika")
         st.subheader("Accurate detection of diseases present in the mango leaves. This helps an user to easily detect the disease and identify it's cause.")
 
              
