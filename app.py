@@ -1,5 +1,6 @@
 import streamlit as st
 import tensorflow as tf
+import keras from tensorflow
 import random
 from PIL import Image, ImageOps
 import numpy as np
@@ -52,7 +53,8 @@ def load_model():
     return model
 with st.spinner('Model is being loaded..'):
     model=load_model()
-
+    model = keras.Sequential()
+    model.add(keras.layers.Input(shape=(224, 224, 4)))
     
 
 st.write("""
