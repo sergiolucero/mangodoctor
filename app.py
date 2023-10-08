@@ -1,6 +1,6 @@
 import streamlit as st
 import tensorflow as tf
-import keras from tensorflow
+from tensorflow import keras
 import random
 from PIL import Image, ImageOps
 import numpy as np
